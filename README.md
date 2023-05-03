@@ -5,7 +5,6 @@ This is a personal portfolio website for a backend engineer, built using React a
 ## Technologies
 
 - React
-- Sanity
 - Node-sass
 - Framer Motion
 - React Icons
@@ -26,7 +25,7 @@ The project has the following main directories:
 After setting up the project, you can navigate through the website to see the different sections:
 
 - Header: displays an introduction to the backend engineer, including their name, role, and expertise. It features animated elements using Framer Motion to create a visually engaging experience.
-- About: The `About` container provides an overview of the backend engineer's experience and expertise. It fetches data from Sanity to display information about the engineer and provides a link to their resume. The component uses Framer Motion for animations and hover effects.
+- About: The `About` container provides an overview of the backend engineer's experience and expertise. The component uses Framer Motion for animations and hover effects.
 - Skills: it showcases the backend engineer's key skills and professional experience. It uses Framer Motion for animations, and React Tooltip to provide more information on each experience item.
 - Work: it displays the backend engineer's background experience and portfolio, including projects from different companies. It features interactive filters for each company, Framer Motion animations, and download links for the project files.
 
