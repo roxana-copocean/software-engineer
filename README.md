@@ -1,6 +1,6 @@
 # Backend Engineer's Portfolio Website
 
-This is a personal portfolio website for a backend engineer, built using React and Sanity as the backend. The website showcases the engineer's skills, work experience, and projects.
+This is a personal portfolio website for a backend engineer, built using React. The website showcases the engineer's skills, work experience, and projects.
 
 ## Technologies
 
