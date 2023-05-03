@@ -38,14 +38,14 @@ Here are some screenshots of the website:
 
 ### Home
 
-![Home](/frontend_react_bogdan/src/assets/github/home.jpg)
+![Home](/src/assets/github/home.jpg)
 
 ### Experience
 
-![Experience](/frontend_react_bogdan/src/assets/github/experience.jpg)
+![Experience](/src/assets/github/experience.jpg)
 
 ### Contact Form
 
-![Contact Form](/frontend_react_bogdan/src/assets/github/form.jpg)
+![Contact Form](/src/assets/github/form.jpg)
 
 
