@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { MdEmail } from 'react-icons/md';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import AppWrap from '../../wrapper/AppWrap';
@@ -7,13 +7,21 @@ import MotionWrap from '../../wrapper/MotionWrap';
 
 import './Footer.scss';
 
+const userID = process.env.REACT_APP_EMAILJS_USERID;
+const templateID = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICEID;
+
 const Footer = () => {
 	const [ name, setName ] = useState('');
 	const [ email, setEmail ] = useState('');
 	const [ message, setMessage ] = useState('');
 	const [ isFormSubmitted, setIsFormSubmitted ] = useState(false);
-	const [ loading, setLoading ] = useState(false);
+	// const [ loading, setLoading ] = useState(false);
 
+	// Email JS-------------------
+	const form = useRef();
+
+	// Inputs State ---------------------
 	const handleName = (e) => {
 		setName(e.target.value);
 	};
@@ -24,22 +32,24 @@ const Footer = () => {
 		setMessage(e.target.value);
 	};
 
-	const handleSubmit = (e) => {
-		setLoading(true);
-		const contact = {
-			_type: 'contact',
-			name: name,
-			email: email,
-			message: message
-		};
-
-		// ****NEED TO FIX THIS
-		// client.create(contact).then(() => {
-		// 	setLoading(false);
-		// 	setIsFormSubmitted(true);
-		// });
+	// Email JS ----------------------
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs.sendForm(serviceID, templateID, form.current, userID).then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+		setName('');
+		setEmail('');
+		setMessage('');
+		setIsFormSubmitted(true);
 	};
 
+	// JSX --------------------------
 	return (
 		<React.Fragment>
 			<h2 className="head-text">Take a coffe & chat with me!</h2>
@@ -62,25 +72,27 @@ const Footer = () => {
 				</div>
 			</div>
 			{!isFormSubmitted ? (
-				<div className="app__footer-form app__flex">
+				<form ref={form} className="app__footer-form app__flex" onSubmit={sendEmail}>
 					<div className="app__flex">
 						<input
 							type="text"
-							name="name"
+							name="user_name"
 							className="p-text"
 							placeholder="Your Name"
 							value={name}
 							onChange={handleName}
+							required
 						/>
 					</div>
 					<div className="app__flex">
 						<input
 							type="email"
-							name="email"
+							name="user_email"
 							className="p-text"
 							placeholder="Your Email"
 							value={email}
 							onChange={handleEmail}
+							required
 						/>
 					</div>
 					<div>
@@ -90,12 +102,13 @@ const Footer = () => {
 							placeholder="Your Message"
 							value={message}
 							onChange={handleMessage}
+							required
 						/>
 					</div>
-					<button type="button" className="p-text" onClick={handleSubmit}>
-						{loading ? 'Sending' : 'Send Message'}
+					<button type="submit" className="p-text">
+						{/* {loading ? 'Sending' : 'Send Message'} */}
 					</button>
-				</div>
+				</form>
 			) : (
 				<div>
 					<h3 className="head-text">Thank you for getting in touch!</h3>

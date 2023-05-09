@@ -7,17 +7,17 @@ function SocialMedia() {
 	return (
 		<div className="app__social">
 			<div>
-				<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.linkedin.com/in/bogdan-copocean/" target="_blank" rel="noopener noreferrer">
 					<FaLinkedin />
 				</a>
 			</div>
 			<div>
-				<a href="https://gitlab.com/" target="_blank" rel="noopener noreferrer">
+				<a href="https://gitlab.com/bogdan.copocean" target="_blank" rel="noopener noreferrer">
 					<SiGitlab />
 				</a>
 			</div>
 			<div>
-				<a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+				<a href="https://github.com/bogdan-copocean" target="_blank" rel="noopener noreferrer">
 					<FaGithub />
 				</a>
 			</div>

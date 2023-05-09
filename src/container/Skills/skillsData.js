@@ -93,7 +93,7 @@ export const experienceData = [
 		]
 	},
 	{
-		year: 2021,
+		year: 2019,
 		works: [
 			{
 				name: 'Software Developer',
