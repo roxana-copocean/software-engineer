@@ -106,7 +106,7 @@ const Footer = () => {
 						/>
 					</div>
 					<button type="submit" className="p-text">
-						{/* {loading ? 'Sending' : 'Send Message'} */}
+						Send Message
 					</button>
 				</form>
 			) : (
