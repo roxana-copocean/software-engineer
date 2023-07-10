@@ -15,19 +15,19 @@ import CV from '../../assets/cv/Bogdan_Copocean_Senior_Software_Engineer.pdf';
 const abouts = [
 	{
 		title: 'AWS Solutions Architect',
-		description: 'Mastering AWS to drive powerful, scalable cloud solutions that redefine the digital landscape.',
+		description: 'Leveraging AWS to drive powerful, scalable cloud solutions that redefine the digital landscape.',
 		imgUrl: aws
 	},
 	{
 		title: 'Backend Developer',
 		description:
-			'Delivering exceptional backend services with clean APIs, seamless integration, and performance in mind.',
+			'Delivering high-quality backend services with clean APIs, seamless integration, and performance in mind.',
 		imgUrl: backend
 	},
 	{
 		title: 'Fronted Developer',
 		description:
-			'Crafting captivating, user-centric interfaces that merge technical excellence with unforgettable experiences.',
+			'Creating engaging, user-focused interfaces that blend top-tier technical expertise with experiences that truly stand out.',
 		imgUrl: frontend
 	}
 ];

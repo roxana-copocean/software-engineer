@@ -6,6 +6,8 @@ import golang from '../../assets/skills/Go-Logo_Aqua.png';
 import javascript from '../../assets/skills/javascript.png';
 import react from '../../assets/skills/react.png';
 import postgres from '../../assets/skills/postgreSQL.jpg';
+import kubernetes from '../../assets/skills/kubernetes.png';
+import kafka from '../../assets/skills/kafka.png';
 
 export const skillsData = [
 	{
@@ -14,9 +16,9 @@ export const skillsData = [
 		icon: python
 	},
 	{
-		name: 'Elasticsearch',
+		name: 'Golang',
 		bgColor: '',
-		icon: elastic
+		icon: golang
 	},
 	{
 		name: 'AWS',
@@ -24,19 +26,19 @@ export const skillsData = [
 		icon: aws
 	},
 	{
+		name: 'Kubernetes',
+		bgColor: '',
+		icon: kubernetes
+	},
+	{
 		name: 'Docker',
 		bgColor: '',
 		icon: docker
 	},
 	{
-		name: 'Golang',
+		name: 'Kafka',
 		bgColor: '',
-		icon: golang
-	},
-	{
-		name: 'PostgreSQL',
-		bgColor: '',
-		icon: postgres
+		icon: kafka
 	},
 	{
 		name: 'JavaScript',
@@ -47,6 +49,16 @@ export const skillsData = [
 		name: 'React',
 		bgColor: '',
 		icon: react
+	},
+	{
+		name: 'PostgreSQL',
+		bgColor: '',
+		icon: postgres
+	},
+	{
+		name: 'Elasticsearch',
+		bgColor: '',
+		icon: elastic
 	}
 ];
 
@@ -83,7 +95,7 @@ export const experienceData = [
 		]
 	},
 	{
-		year: 2021,
+		year: 2020,
 		works: [
 			{
 				name: 'Software Engineer',

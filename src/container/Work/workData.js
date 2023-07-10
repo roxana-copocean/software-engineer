@@ -2,6 +2,7 @@ import hotjarImage from '../../assets/work/hotjar.png';
 import finnImage from '../../assets/work/finn.png';
 import epamImage from '../../assets/work/epam.jpg';
 import cyberghostImage from '../../assets/work/cyberghost.png';
+
 import CV from '../../assets/cv/Bogdan_Copocean_Senior_Software_Engineer.pdf';
 
 export const worksData = [
